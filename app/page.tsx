@@ -1,8 +1,11 @@
 import React from 'react'
-
+import { Button } from '@/components/ui/button'
 const Page = () => {
   return (
-    <div>Page</div>
+    <div>
+      <h1 className='tsxt-2xl underline'>Welcome to my SaaS</h1>
+      <Button>Click Me</Button>
+    </div>
   )
 }
 
