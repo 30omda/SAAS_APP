@@ -1,11 +1,21 @@
 import React from 'react'
-import { Button } from '@/components/ui/button'
+import CompanionCard from '@/components/CompanionCard'
+import Cta from '@/components/CTA'
+import CompanionsList from '@/components/CompanionsList'
 const Page = () => {
   return (
-    <div>
-      <h1 className='tsxt-2xl underline'>Welcome to my SaaS</h1>
-      <Button>Click Me</Button>
-    </div>
+    <main>
+      <h1>Popular Companions</h1>
+      <section className='home-section'>
+        <CompanionCard />
+        <CompanionCard />
+        <CompanionCard />
+      </section>
+      <section className='home-section'>
+        <CompanionsList />
+        <Cta />
+      </section>
+    </main>
   )
 }
 
